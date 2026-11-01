@@ -1,11 +1,13 @@
 import type { ComponentType } from "react";
 import { CoverSlide, OverviewSlide, PlanSlide } from "./Intro";
+import { TitleSlide } from "./Title";
 import { HeritageSlide, MummiesSlide } from "./Heritage";
 import { KpiSlide, PillarsSlide, ReformsSlide, SuezSlide } from "./Economy";
 import { ComparisonSlide, LessonsSlide, SectorsSlide, TrendsSlide } from "./Compare";
 import { ConclusionSlide, CreditsSlide, ThanksSlide } from "./Outro";
 
 export const SLIDES: { title: string; Component: ComponentType }[] = [
+  { title: "Titul varaq", Component: TitleSlide },
   { title: "Muqova", Component: CoverSlide },
   { title: "Reja", Component: PlanSlide },
   { title: "Umumiy maʼlumot", Component: OverviewSlide },

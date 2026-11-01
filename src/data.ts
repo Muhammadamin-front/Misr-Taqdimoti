@@ -5,11 +5,13 @@ export const IMG = (name: string) => `${import.meta.env.BASE_URL}images/${name}.
 
 /** Muqovadagi oʻqituvchi/talaba maʼlumotlari — oʻzingiznikiga almashtiring. */
 export const AUTHOR = {
-  student: "Ism Familiya",
-  group: "Guruh: ___",
-  teacher: "Ilmiy rahbar: ___",
-  subject: "Iqtisodiyot nazariyasi",
+  student: "Qoʻchqorova Nigora",
+  group: "85-25 I guruh",
+  teacher: "",
+  subject: "Iqtisodiyotda siyosat",
   year: "2026",
+  university: "Fargʻona davlat texnika universiteti",
+  faculty: "Ishlab chiqarishda boshqaruv fakulteti",
 };
 
 export const EGYPT_FACTS = [

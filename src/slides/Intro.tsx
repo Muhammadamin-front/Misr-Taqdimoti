@@ -57,7 +57,7 @@ export function CoverSlide() {
             <span className="font-semibold text-lapis-300">Oʻzbekiston</span> bilan taqqoslash
           </p>
           <p className="mt-2 text-sm text-zinc-400">
-            {AUTHOR.student} · {AUTHOR.group} · {AUTHOR.teacher} · {AUTHOR.year}
+            {[AUTHOR.student, AUTHOR.group, AUTHOR.teacher, AUTHOR.year].filter(Boolean).join(" · ")}
           </p>
         </motion.div>
       </div>

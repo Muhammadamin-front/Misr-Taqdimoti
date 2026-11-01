@@ -32,3 +32,28 @@
   background-clip: text;
   color: transparent;
 }
+
+/* Titul varaq: yozuv kursori */
+.title-caret {
+  display: inline-block;
+  width: 0.06em;
+  height: 0.95em;
+  margin-left: 0.04em;
+  margin-right: -0.1em;
+  vertical-align: -0.1em;
+  background: #d6b679;
+  box-shadow: 0 0 12px rgba(214, 182, 121, 0.7);
+}
+.title-caret--idle {
+  animation: title-caret-blink 1.05s steps(1) infinite;
+}
+@keyframes title-caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .title-caret--idle {
+    animation: none;
+  }
+}
